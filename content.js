@@ -6,5 +6,6 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
     // For example, use document.querySelector to select form elements and fill them
     document.getElementById('first_name').value = 'John';
     document.getElementById('last_name').value = 'Doe';
+    sendResponse({ action: 'fillForm', htmlContent: document.documentElement.outerHTML });
   }
 });
