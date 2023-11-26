@@ -13,7 +13,7 @@ document.getElementById('login').addEventListener('click', async (event) => {
       });
   } else {
       // if the session id is null, open the Django login page in a new tab
-      window.open('http://localhost:8000/login', '_blank');
+      window.open('http://localhost:8000/login/', '_blank');
   }
 });
 
